@@ -9,6 +9,7 @@ import { ProductService } from '../services/products.service';
 import { PurchasesService } from '../services/purchases.services';
 import { PurchasesResolver } from './graphql/resolvers/purchases.resolver';
 import { CustomersService } from '../services/customers.service';
+import { CustomersResolver } from './graphql/resolvers/customers.resolver';
 
 // read process.env in this module
 @Module({
@@ -25,6 +26,7 @@ import { CustomersService } from '../services/customers.service';
     ProductService,
     PurchasesResolver,
     PurchasesService,
+    CustomersResolver,
     CustomersService,
   ],
 })

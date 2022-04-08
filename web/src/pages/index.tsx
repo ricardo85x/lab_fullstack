@@ -19,7 +19,10 @@ export const getServerSideProps : GetServerSideProps = async ({req, res}) => {
     };
   }
 
+  // console.log("session", session);
+
   return {
+    // props: {}
     redirect: {
       destination: '/app',
       permanent: false
